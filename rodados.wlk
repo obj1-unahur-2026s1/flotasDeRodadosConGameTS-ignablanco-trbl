@@ -90,7 +90,9 @@ class Dependencia {
     method capacidadDeFlota() {
         return flota.sum({f=>f.capacidad()})
     }
+    method esGrande() = empleados >= 40 && flota.size() > 5
 }
+
 
 
 
